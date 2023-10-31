@@ -1,0 +1,96 @@
+function isPalindrome(num){
+    let firstNumber = String(num);
+    // let secondNumber = [...firstNumber].reverse().join('');
+    // console.log(secondNumber,typeof(secondNumber));
+    
+
+    /*
+    I NEED TO CHECK HOW TO NOT IGNORE THE ZERO
+    */
+    
+    // console.log(secondNumber,typeof(secondNumber))
+    // this will be the array that contains the individual numbers of our number 
+    // let firstArray = [...str];
+
+    // CHECK THE CONVERSION TO AN ARRAY 
+    // console.log(firstArray);
+    
+     // REVERSE THE ARRAY 
+    // let secondArray = [...str].reverse();
+
+    // CHECK THE REVERSED ARRAY
+    // console.log(secondArray,firstArray);
+    // console.log(firstArray.length)
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    // FIRST APPROACH
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+    // COMPARING THE STRINGs
+    // THE FIRST APPROACH I USED IS TO COMPARE NUMBERS AS ARRAYS OF STRINGS 
+    // for(let i = 0; i < firstArray.length; i++) {
+
+        
+    //     if(firstArray[i] !== secondArray[i]) {
+    //          // CHECK THE NUMBERS OF THE ARRAY   
+    //         // console.log(firstArray[i], secondArray[i]);
+    //         console.log('number is not a palindrome');
+    //         return false;
+    //     }
+    // }
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// SECOND APPROACH 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+HERE I WILL CONVERT THE NUMBER TO A STRING THEN REVERSE IT 
+AND CONVERT IT TO NUMBER AGAIN 
+THEN COMPARE THE TWO NUMBERS
+*/
+
+/* 
+THIS APPROACH IS GOING TO WORK WITH STRINGS AND WITHOUT CONVERTING
+*/
+
+// if(firstNumber !== secondNumber ) {
+//     console.log('this is not a palindrome');
+//     return false
+// }
+
+// console.log('this is a palindrome');
+// return true
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+// THIRD APPROACH 
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+I will use the multiple pointers approach to solve the problem 
+*/
+ let j = firstNumber.length - 1;
+
+for (let i = 0; i < firstNumber.length; i++) {
+    console.log(i,j);
+    if(firstNumber[i] !== firstNumber[j]){
+        console.log('number is not palindrome');
+        return false;
+    }
+    j--;
+    
+}
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// console.log('The number is a plindrome'); 
+// return true;
+
+}
+
+
+isPalindrome(121);
