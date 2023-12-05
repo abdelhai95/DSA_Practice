@@ -2,7 +2,14 @@
 (https://leetcode.com/problems/longest-common-prefix/description/)
 
 ## Problem Description 
-Write a function to find the longest common prefix string amongst an array of strings.
+Given a string s containing just the characters ``` '(', ')', '{', '}', '[' and ']' ```, determine if the input string is valid.
+
+An input string is valid if:
+
+* Open brackets must be closed by the same type of brackets.
+* Open brackets must be closed in the correct order.
+* Every close bracket has a corresponding open bracket of the same type.
+
 
 ## My Solution Explanation 
 - Consider the array's first element to be our initial common prefix.  
