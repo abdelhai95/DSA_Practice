@@ -17,10 +17,13 @@ function isValid(s) {
     for(let i = 0; i <= s.length - 2; i+=2) {
         let j = i + 1;
         
+        // accessing the object values
+        // console.log(valid[s[i]]);
+        
     
     }
 
 }
 
 
-isValid(test3);
+isValid(test1);
