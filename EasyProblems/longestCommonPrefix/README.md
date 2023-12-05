@@ -18,8 +18,8 @@ Write a function to find the longest common prefix string amongst an array of st
  Use `every()` to loop over the array elements in a certain position.
 
 - **[Solution 2](https://leetcode.com/problems/longest-common-prefix/solutions/3291991/using-simple-str-sort-method-5-line-code/)**\
-Use `sort()` on the array to sort strings alphabetically, then compare the first and last element.
 
+Use `sort()` on the array to sort strings alphabetically, then compare the first and last element.
 
 ## Follow me 
 Let's connect to share knowledge and journey 🚀
