@@ -17,6 +17,7 @@ An input string is valid if:
 - Stack ensure the right order of the brackets.
 - I can enhance my solution by eleminating the `includes()` method and hard code the options.
 
+- Ps. Python solution is faster compared to JavaScript although I tried to implement the same idea.
 ## Time complexity
 
     O(n)
@@ -27,7 +28,8 @@ An input string is valid if:
 
 ## Other Solutions
 - **[Solution 1](https://leetcode.com/problems/valid-parentheses/solutions/4120796/beats-100-o-n-solution-with-100-acceptance-rate-with-easy-and-detailed-explanation/):**\
-The idea is similar to my approach without but more efficient.
+The idea is similar to my approach without include method but more efficient.
+
 
 ## Follow me 
 Let's connect to share knowledge and journey 🚀
