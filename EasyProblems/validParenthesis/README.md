@@ -1,5 +1,5 @@
 # Valid Parenthesis
-(https://leetcode.com/problems/longest-common-prefix/description/)
+(https://leetcode.com/problems/valid-parentheses/)
 
 ## Problem Description 
 Given a string s containing just the characters ``` '(', ')', '{', '}', '[' and ']' ```, determine if the input string is valid.
@@ -12,13 +12,15 @@ An input string is valid if:
 
 
 ## My Solution Explanation 
-- Consider the array's first element to be our initial common prefix.  
-- Use `startsWith()` to check if the second element starts with our common prefix if *`true`* --> check the next element in the array and we do that till we reach the end of the array when `! j < arr.length`.  
-- When *`false`* we take the last char from the first element and compare it to the same element till we find the chars it starts with only then we move to next element or we slice all of our fcommon prefix chars which will terminates the loop and return empty string.
+Eevery bracket should match the next bracket.
 
 ## Time complexity
 
     O(n)
+
+## Space complexity
+
+    O(1)    
 
 ## Other Solutions
 - **[Solution 1](https://leetcode.com/problems/longest-common-prefix/solutions/3825300/most-easy-javascript-solution-beat-96/):**\

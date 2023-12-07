@@ -1,25 +1,26 @@
-
-const test1 = "()[]{}";
-const test2 = "()";
-const test3 = '(]'
-
-
 function isValid(s) {
 
     const valid = {
-        '(': ')',
+        '(':  ')',
         '{' : '}',
         '[' : ']'
-    }
+    };
 
-    for(let i = 0; i <= s.length - 2; i+=2) {
-        let j = i + 1;
+    let stack = [];
+    
+    if(s.length % 2 !== 0) return false;
 
-        if(valid[s[i]] !== s[j]) return false;    
-    }
-
-    return true;
+    for (let i = 0; i < s.length; i++) {
+        if(Object.keys(valid).includes(s[i])) stack.push(valid[s[i]]);
+        else if (stack.pop() !== s[i]) {
+            console.log('failed')
+            return false;
+        };
+        
+    };
+    if(stack.length) return false 
+    else return true;     
 }
 
 
-isValid(test1);
+
