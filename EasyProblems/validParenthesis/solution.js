@@ -13,7 +13,6 @@ function isValid(s) {
     for (let i = 0; i < s.length; i++) {
         if(Object.keys(valid).includes(s[i])) stack.push(valid[s[i]]);
         else if (stack.pop() !== s[i]) {
-            console.log('failed')
             return false;
         };
         
