@@ -12,7 +12,10 @@ An input string is valid if:
 
 
 ## My Solution Explanation 
-Eevery bracket should match the next bracket.
+- Check if the bracket is open --> add the close bracket of that type to stack.
+- if the bracket is close --> compare to last stack element which are are close brackets. 
+- Stack ensure the right order of the brackets.
+- I can enhance my solution by eleminating the `includes()` method and hard code the options.
 
 ## Time complexity
 
@@ -20,15 +23,11 @@ Eevery bracket should match the next bracket.
 
 ## Space complexity
 
-    O(1)    
+    O(n)    
 
 ## Other Solutions
-- **[Solution 1](https://leetcode.com/problems/longest-common-prefix/solutions/3825300/most-easy-javascript-solution-beat-96/):**\
- Use `every()` to loop over the array elements in a certain position.
-
-- **[Solution 2](https://leetcode.com/problems/longest-common-prefix/solutions/3291991/using-simple-str-sort-method-5-line-code/)**\
-
-Use `sort()` on the array to sort strings alphabetically, then compare the first and last element.
+- **[Solution 1](https://leetcode.com/problems/valid-parentheses/solutions/4120796/beats-100-o-n-solution-with-100-acceptance-rate-with-easy-and-detailed-explanation/):**\
+The idea is similar to my approach without but more efficient.
 
 ## Follow me 
 Let's connect to share knowledge and journey 🚀
